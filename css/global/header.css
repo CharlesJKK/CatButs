@@ -1,0 +1,50 @@
+.header{
+    padding-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo a img{
+    height: 40px;
+}
+
+.nav ul{
+    display: flex;
+    gap: 40px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.nav ul li a{
+    font-size: 1.75rem;
+    padding: 10px;
+}
+
+.nav ul li a:hover{
+    color: #C90D0D;
+    background: url("../../imgs/header/buttonHover.svg") no-repeat center;
+    background-size: 90px;
+}
+
+@media (max-width: 1000px){
+    .header{
+        display: grid;
+        grid-template-columns: 1fr;
+        justify-items: center;
+        gap: 20px;
+    }
+}
+
+@media (max-width: 500px){
+    .nav ul{
+        gap: 30px;
+    }
+
+    .nav ul li a{
+        font-size: 1.4rem;
+        padding: 10px;
+        background-color: rgba(201, 13, 13, 0.363);
+        border-radius: 4px;
+    }
+}
