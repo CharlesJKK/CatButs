@@ -1,0 +1,36 @@
+#characters{
+    background: radial-gradient(69.52% 50% at 50.03% 50%, #840F0E 0%, #3E0503 100%) no-repeat;
+    height: 100vh;
+}
+
+.characters-container{
+    padding-top: 180px;
+}
+
+.characters-title{
+    max-width: max-content;
+    word-break: break-word;
+}
+
+.characters-title h1{
+    font-size: 6rem;
+    text-align: center;
+}
+
+.image img{
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+    z-index: -1;
+}
+
+@media (max-width: 400px){
+    .characters-container{
+        padding-top: 40px;
+    }
+
+    .characters-title h1{
+        font-size: 4rem;
+        text-align: center;
+    }
+}
