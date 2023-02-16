@@ -14,39 +14,63 @@
     <title>CatBut</title>
 </head>
 <body id="characters">
-    <header class="header container">
-        <div class="logo">
-            <a href="./"><img src="./imgs/catbutsLogo.svg" alt="Logo do site"></a>
-        </div>
-        <nav aria-label="primária" class="nav">
-            <ul>
-                <li><a href="" class="font-luckiest">Resumo</a></li>
-                <li><a href="" class="font-luckiest">Recomendações</a></li>
-                <li><a href="./characters.html" class="font-luckiest">Personagens</a></li>
-            </ul>
-        </nav>
-    </header>
-    <main class="characters-container container">
-        <div class="characters-title">
-            <h1 class="font-sansita-xb">Personagens</h1>
-        </div>
-        <div class="image">
-            <img src="./imgs/characters/decoration.svg" alt="Os personagens gato de botas, kitty e pierro">
+    <main class="characters-main">
+        <header class="header container">
+            <div class="logo">
+                <a href="./"><img src="./imgs/catbutsLogo.svg" alt="Logo do site"></a>
+            </div>
+            <nav aria-label="primária" class="nav">
+                <ul>
+                    <li><a href="" class="font-luckiest">Resumo</a></li>
+                    <li><a href="" class="font-luckiest">Recomendações</a></li>
+                    <li><a href="./characters.html" class="font-luckiest">Personagens</a></li>
+                </ul>
+            </nav>
+        </header>
+        <div class="container">
+            <div class="title">
+                <h1 class="font-sansita-xb">Personagens</h1>
+            </div>
         </div>
     </main>
-    <article class="characters-slider">
-        <div>
-            <img src="" alt="">
+    <article class="container-slider">
+        <button id="prev-button"><img src="./imgs/characters/chevronLeft.svg" alt="prev-button"></button>
+        <div class="container-images">
+            <div class="slider on">
+                <h2 class="font-sansita-xb">O Time Amizade</h1>
+                <p class="font-sansita-xb">Gato de botas
+                    <span>Kitty Pata Mansa</span>
+                    <span>Pierro</span>
+                </p>
+                <img src="./imgs/characters/timeAmizade.svg" alt="time amizade" class="showImg showImgOn">
+            </div>
+            <div class="slider">
+                <p class="font-sansita-xb">Ele não é mais Joãozinho trombeta
+                    <span>Seu nome agora é</span>
+                </p>
+                <h2 class="font-sansita-xb">Joãozão Trombeta</h1>
+                <img src="./imgs/characters/joazaoTrombeta.svg" alt="joão trombeta" class="showImg">
+            </div>
+            <div class="slider">
+                <h2 class="font-sansita-xb">Família Cachinhos</h1>
+                <p class="font-sansita-xb">Cachinhos
+                    <span>Bebê Urso</span>
+                    <span>Mamãe Urso</span>
+                    <span>Papai Urso</span>
+                </p>
+                <img src="./imgs/characters/cachinhos.svg" alt="cachinhos e cia" class="showImg">
+            </div>
+            <div class="slider">
+                <p class="font-sansita-xb">Não metaforicamente 
+                    <span>Nem Retoricamente ou Poeticamente</span>
+                    <span>Ele é literalmente a</span>
+                </p>
+                <h2 class="font-sansita-xb death">MORTE</h1>
+                <img src="./imgs/characters/aMorte.svg" alt="A morte" class="showImg loboImg">
+            </div>
         </div>
-        <div>
-            <h2></h2>
-            <p></p>
-            <p></p>
-            <p></p>
-        </div>
-        <div>
-            <img src="" alt="">
-        </div>
+        <button id="next-button"><img src="./imgs/characters/chevronRight.svg" alt="next-button"></button>
     </article>
+    <script src="./js/script.js" defer></script>
 </body>
 </html>
