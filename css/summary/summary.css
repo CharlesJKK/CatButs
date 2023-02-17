@@ -1,0 +1,38 @@
+#summary{
+    background: radial-gradient(50% 50% at 50% 50%, #990A08 0%, #630604 100%) fixed;
+}
+
+main h1{
+    text-align: center;
+    padding-top: 120px;
+    font-size: 3rem;
+}
+
+main div{
+    text-align: center;
+    padding: 30px 40px;
+}
+
+main div p{
+    max-width: 80ch;
+    word-break: break-word;
+    font-size: 1.2rem;
+    letter-spacing: 1px;
+    margin: 0 auto;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    color: #fff;
+}
+
+@media (max-width: 500px){
+    main h1{
+        padding-top: 60px;
+        font-size: 2rem;
+        word-break: break-word;
+    }
+
+    main div p{
+        font-size: 0.8rem;
+        height: max-content;
+    }
+}
