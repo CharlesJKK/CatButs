@@ -1,0 +1,38 @@
+#recommendations{
+    background: url("../../imgs/recommendations/recomendacoesBg.svg") no-repeat fixed;
+    background-size: cover;
+}
+
+.films-main h1{
+    text-align: center;
+    padding-top: 80px;
+    font-size: 3rem;
+}
+
+.films-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 350px);
+    justify-content: center;
+    justify-items: center;
+    gap: 40px 0px;
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+.films-container div img{
+    border-radius: 4px;
+}
+
+@media (max-width: 800px){
+    
+    .films-container{
+        grid-template-columns: repeat(auto-fit, 100px);
+        gap: 40px;
+    }
+}
+
+@media (max-width: 400px){
+    .films-main h1{
+        font-size: 2rem;
+    }
+}
