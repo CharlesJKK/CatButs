@@ -29,14 +29,13 @@
 }
 
 .slider{
-    opacity: 0;
-    transition: opacity .2s;
-    padding-top: 40px;
-    position: absolute;
+    display: none;
 }
 
 .on{
-    opacity: 1;
+    display: initial;;
+    padding-top: 40px;
+    position: absolute;
 }
 
 .slider h2{
@@ -61,15 +60,6 @@
 .slider p span{
     font-family: inherit;
     font-weight: inherit;
-}
-
-.showImg{
-    display: none;
-}
-
-.showImgOn{
-    display: initial;
-    align-self: center;
 }
 
 .loboImg{
