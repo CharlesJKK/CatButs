@@ -1,43 +1,15 @@
-const slider = document.querySelectorAll('.slider');
-const showImg = document.querySelectorAll('.showImg')
-const btnPrev = document.getElementById('prev-button');
-const btnNext = document.getElementById('next-button');
+//Ativar menu do Header.
+const links = Array.from(document.querySelectorAll('.nav ul li a'))
 
-let currentSlide = 0;
+console.log(links)
 
-function hideSlider(){
-    slider.forEach(item => item.classList.remove('on'));
-    showImg.forEach(item => item.classList.remove('showImgOn'))
-}
+function menuAtivo(link){
+    const url = window.location.href;
+    const href = link.href;
 
-function showSlider(){
-    slider[currentSlide].classList.add('on');
-    showImg[currentSlide].classList.add('showImgOn')
-}
-
-function nextSlider(){
-    hideSlider()
-
-    if(currentSlide === slider.length - 1){
-        currentSlide = 0
-    }else{
-        currentSlide++
+    if(url.includes(href)){
+        link.classList.add("ativo");
     }
-    
-    showSlider()
 }
 
-function prevSlider(){
-    hideSlider()
-
-    if(currentSlide === 0){
-        currentSlide = slider.length -1;
-    }else{
-        currentSlide--
-    }
-
-    showSlider()
-}
-
-btnNext.addEventListener('click', nextSlider)
-btnPrev.addEventListener('click', prevSlider)
+links.forEach(menuAtivo)

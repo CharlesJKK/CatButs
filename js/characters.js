@@ -1,6 +1,5 @@
 //Mudança de slider na tela de personagens.
 const slider = document.querySelectorAll('.slider');
-const showImg = document.querySelectorAll('.showImg');
 const btnPrev = document.getElementById('prev-button');
 const btnNext = document.getElementById('next-button');
 
@@ -8,12 +7,10 @@ let currentSlide = 0;
 
 function hideSlider(){
     slider.forEach(item => item.classList.remove('on'));
-    showImg.forEach(item => item.classList.remove('showImgOn'))
 }
 
 function showSlider(){
     slider[currentSlide].classList.add('on');
-    showImg[currentSlide].classList.add('showImgOn')
 }
 
 function nextSlider(){

@@ -19,12 +19,35 @@
 .nav ul li a{
     font-size: 1.75rem;
     padding: 10px;
+    position: relative;
+    display: inline-block;
 }
 
 .nav ul li a:hover{
     color: #C90D0D;
-    background: url("../../imgs/header/buttonHover.svg") no-repeat center;
+}
+
+.nav ul li a:after{
+    content: "";
+    background: url("../../imgs/header/buttonHover.svg") center;
+    transition: 0.3s;
+    position: absolute;
+    left: 20px;
+    top: -4px;
+    width: 0;
+    height: 0;
+}
+
+.nav ul li a.ativo{
+    color: #C90D0D;
+}
+
+.nav ul li a:hover::after,
+.nav ul li a.ativo::after{
     background-size: 90px;
+    width: 60px;
+    height: 60px;
+    z-index: -1;
 }
 
 @media (max-width: 1000px){
