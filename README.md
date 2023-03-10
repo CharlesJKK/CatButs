@@ -13,7 +13,7 @@ As tecnologias utilizadas nesse projeto foram:
 * CSS
 * Javascript
 
-## Vercionamento feito com:
+## Versionamento feito com:
 
 * Github
 
